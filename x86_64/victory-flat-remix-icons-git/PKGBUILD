@@ -15,7 +15,6 @@ provides=("${pkgname}")
 options=(!strip !emptydirs)
 source=(${_pkgname}::"git+https://github.com/Vicck-tech/victory-repo/x86_64/${_pkgname}.git")
 sha256sums=('SKIP')
-install='readme.install'
 package() {
 	mkdir -p "${pkgdir}${_licensedir}${_pkgname}"
 	mv "${srcdir}/${_pkgname}/"LICENSE "${pkgdir}${_licensedir}${_pkgname}/LICENSE"
