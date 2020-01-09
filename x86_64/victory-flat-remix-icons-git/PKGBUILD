@@ -13,7 +13,7 @@ makedepends=('git')
 depends=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${_pkgname}::"git+https://github.com/Vicck-tech/victory-repo/x86_64/${_pkgname}.git")
+source=(${_pkgname}::"git+https://github.com/Vicck-tech/victory-repo/x86_64/${pkgname}")
 sha256sums=('SKIP')
 package() {
 	mkdir -p "${pkgdir}${_licensedir}${_pkgname}"
