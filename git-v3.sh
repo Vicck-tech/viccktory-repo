@@ -4,6 +4,9 @@
 echo "Checking for newer files online first"
 git pull
 
+cd x86_64
+sh update-db.sh
+
 echo "Deleting the work folder if one exists"
 [ -d work ] && rm -rf work
 
